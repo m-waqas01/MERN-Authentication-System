@@ -15,4 +15,8 @@ app.use(cors());
 // Routes
 app.use("/api", userRoutes);
 
+app.get("/", (req, res) => {
+  res.send("API is running...");
+});
+
 export default app;
